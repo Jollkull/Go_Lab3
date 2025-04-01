@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Енергетичний калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Аналіз енергетичних показників</h1>
+        
+        <div class="calculator-container">
+            <h2>Завдання 1: Розрахунок енергоефективності</h2>
+            <form id="calculator1">
+                <div class="input-group">
+                    <label for="input1">Середньодобова потужність (МВт):</label>
+                    <input type="number" step="any" id="input1" required>
+                </div>
+                <div class="input-group">
+                    <label for="input2">Квадратичне відхилення:</label>
+                    <input type="number" step="any" id="input2" required>
+                </div>
+                <div class="input-group">
+                    <label for="input3">Вдосконалене квадратичне відхилення:</label>
+                    <input type="number" step="any" id="input3" required>
+                </div>
+                <div class="input-group">
+                    <label for="input4">Вартість електроенергії (грн/кВт·год):</label>
+                    <input type="number" step="any" id="input4" required>
+                </div>
+                <button type="submit" class="calculate-btn">Розрахувати</button>
+            </form>
+            <div id="result" class="result-box"></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
